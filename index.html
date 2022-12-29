@@ -1,1 +1,260 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tommy Woodley</title>
+    <meta charset="UTF-8">
+    <meta property="og:url" content="https://tommywoodley.com/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Tommy Woodley"/>
+<!--    <meta property="og:description" content="description"/>-->
+<!--    <meta property="og:image" content="image"/>-->
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta name="description" content="Hi! I'm a Computing student at Imperial College London">
+    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=.5">
+    <style>
+        :root {
+            --background: #d3d3d3;
+            --primary: #000000;
+            --accent: #8b94e8;
+            --accent-transparent: rgba(87, 98, 213, .99);
+            --gray: #ddd;
+
+            --sans: 'Montserrat', sans-serif;
+            --serif: 'Merriweather', serif;
+        }
+
+        body {
+            color: var(--primary);
+            background-color: var(--background);
+            font-family: var(--sans);
+            font-weight: 200;
+            font-size: small;
+            transition: background-color 0.5s ease-out, color 0.5s ease-out;
+        }
+
+        .dark-mode {
+            background-color: var(--primary);
+            color: var(--background);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--primary);
+            color: var(--primary);
+            overflow: visible;
+            text-align: center;
+            width: 96%;
+        }
+
+        .dark-mode hr {
+            border-top: 1px solid var(--background);
+        }
+
+        h1 {
+            font-size: 100%;
+            font-weight: 900;
+            font-family: var(--serif);
+        }
+
+        p {
+            font-size: 55%;
+            line-height: 1.2;
+        }
+
+        #container {
+            max-width: min(700px, 90%);
+            margin: 0 auto;
+            padding: 20px 50px 20px 50px;
+        }
+
+        #menu {
+            list-style: none;
+            font-weight: 900;
+            font-size: 55%;
+            font-family: var(--serif);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .separator {
+            display: none;
+        }
+
+        #footer {
+            font-size: 70%;
+            padding-top: 1em;
+            padding-bottom: 4em;
+        }
+
+        img {
+            width: 100%;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+        }
+
+        .mediaContainer {
+            width: 100%;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        .media {
+            max-width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .iframeContainer {
+            max-width: 60%;
+            padding-top: 50%;
+            display: block;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: 0px;
+        }
+
+        a:link {
+            color: var(--primary);
+            font-weight: 900;
+            font-family: var(--serif);
+            text-decoration: none;
+            transition: color 0.5s ease-out;
+        }
+
+        a:visited {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .dark-mode a:link {
+            color: var(--background);
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: var(--accent);
+        }
+
+        .dark-mode a:hover {
+            color: var(--accent);
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+
+        *:focus {
+            outline-style: none;
+        }
+
+        ::selection {
+            background: var(--accent-transparent);
+            color: var(--background);
+        }
+
+        ::-moz-selection {
+            background: var(--accent-transparent);
+            color: var(--background);
+        }
+
+        ::-webkit-scrollbar {
+            width: auto;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--background);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gray);
+        }
+
+        @media(hover) {
+            body {
+                font-size: calc(0.8 * (1em + 1vw));
+            }
+
+            video {
+                max-height: 600px;
+            }
+
+            #menu {
+                display: flex;
+                flex-direction: row;
+                item-width: 100%;
+                justify-content: space-between;  /* flex-start */
+            }
+
+            .separator {
+                display: inline;
+            }
+        }
+
+        @keyframes fade-in {
+            10%, 90% {
+                opacity: 0.6;
+            }
+        }
+
+    </style>
+</head>
+<div id="container">
+    <h1>
+        Hi!
+    </h1>
+    <p>I'm Tommy, I'm a 3rd year MEng Computing student at Imperial College London.</p>
+    <ul id="menu">
+        <li>
+            <a href="" target="_blank">
+                CV</a>
+        </li>
+        <span class="separator"> | </span>
+        <li>
+            <a href="https://github.com/tommywoodley" target="_blank" rel="noopener">
+                GitHub</a>
+        </li>
+        <span class="separator"> | </span>
+        <li>
+            <a href="https://linkedin.com/in/tommywoodley" target="_blank" rel="noopener">
+                LinkedIn</a>
+        </li>
+        <span class="separator"> | </span>
+        <li>
+            <a href="mailto:thwoodley@gmail.com">
+                thwoodley@gmail.com</a>
+        </li>
+    </ul>
+    <p>
+        Here's a few things I've been working on:
+    </p>
+
+    <hr/>
+
+    <p>
+        <a href="">UniGrade</a> – an iOS Application to help students calculate their grades.
+<!--    <div class="mediaContainer">-->
+<!--        <a href="https://kidneycaliper.lucidifai.com/past-runs/">-->
+<!--            <img src="media/kidneycaliper.jpeg" class="media"></img>-->
+<!--        </a>-->
+<!--    </div>-->
+    </p>
+
+    <hr/>
+</div>
+</body>
+</html>
